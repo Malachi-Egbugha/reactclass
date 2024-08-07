@@ -1,0 +1,22 @@
+.mainBody{
+   display: grid;
+   height: 100vh;
+   
+   grid-template-columns: 500fr 780fr;
+   grid-template-areas: 'main body';
+}
+
+.body1{
+    grid-area: main;
+    background-color:  #262627;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.body2{
+    grid-area: body;
+    background-color: #9f6cfa;
+    display: flex;
+    justify-content: flex-start;
+    
+}

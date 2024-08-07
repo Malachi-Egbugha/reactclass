@@ -1,0 +1,81 @@
+
+.Bmain{
+    width: 350px;
+    height: 480px;
+    background-color: #262627;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-left: 20px;
+    box-shadow:
+                -5px 20px 19px rgb(20, 20, 20);
+                
+}
+.Lmain{
+    width:250px ;
+    height:400px ;
+    margin-top: 120px;
+   
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    
+}
+.field input{
+    
+    height: 35px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px #6d6d6d solid;
+    outline: 0;
+    background-color: #262627;
+    color: #fff;
+}
+.Lmain h1{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.Lmain h5{
+    color: #fff;
+    font-weight: 50;
+    margin-bottom: 20px;
+}
+.Lmain p{
+    color: #6d6d6d;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+   
+}
+::-ms-input-placeholder{
+    color: #878585;
+    font-size: 13px;
+
+}
+.submit{
+    width: 250px;
+    border-radius: 8px;
+    height: 35px;
+    outline: 0;
+    border: 0.5px black solid;
+    margin-bottom: 60px;
+    background-color: #9f6cfa;
+   
+}
+#BottomDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#BottomDiv button{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(82, 82, 82);
+    margin-left: 25px;
+    margin-bottom: 5px
+}

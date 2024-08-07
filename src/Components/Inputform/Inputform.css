@@ -1,0 +1,15 @@
+#inputcontainer{
+    width: 90%;
+    color: #fff;
+    
+
+}
+.inputitem{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+.label{
+    font-size: 12px;
+}
