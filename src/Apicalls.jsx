@@ -7,11 +7,16 @@ export var signin = async (username, password) => {
       password: password,
     })
     
-    console.log("check",response.data);
+   
+    return response.data;
+  
 
 
     
   } catch (error) {
-    console.log(error)
+    return {error:true, message:error.response.data.message}
+
+    //console.log("message",error.response.data.message)
+    
   }
 };
