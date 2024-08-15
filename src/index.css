@@ -89,7 +89,7 @@ body{
 .container{
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows:0.09fr 3fr ;
+  grid-template-rows:0.15fr 3fr ;
   grid-template-areas: 'sidebar header'
                        'sidebar  main '    ;
   height: 100vh;

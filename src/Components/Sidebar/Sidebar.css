@@ -3,6 +3,7 @@
     flex-direction: column;
     grid-area: sidebar;
     background-color: rgba(180, 180, 180, 0.7);
+ 
 }
 .sidebarheader{
     width: 100%;
@@ -16,8 +17,11 @@
     flex-direction: column;
     width: 100%;
     gap: 20px;
-    flex: 5
+    flex: 5;
+  
+   
 }
+
 .iconmain{
     display: flex;
     flex-direction: row;

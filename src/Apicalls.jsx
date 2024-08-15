@@ -1,8 +1,11 @@
 import  axios from "axios";
+import { config } from "./Services";
+var {baseurl} = config
+
 export var signin = async (username, password) => {
   try {
     
-    var response = await axios.post("https://radar2.pythonanywhere.com/login/",  {
+    var response = await axios.post(`${baseurl}/login/`,  {
       username_or_email: username,
       password: password,
     })
@@ -20,3 +23,23 @@ export var signin = async (username, password) => {
     
   }
 };
+export var signups = async (emailinput) =>{
+  console.log("emailinput",emailinput);
+  try{
+    var response = await axios.post(`${baseurl}/signup/`,  {
+      email:emailinput,  
+      user_type:"user"
+    })
+    console.log("response", response);
+    
+   
+    return response.data;
+  
+
+  }
+  catch(error){
+    console.log("error", error);
+    return {error:true, message:error.response.data.message}
+
+  }
+}
