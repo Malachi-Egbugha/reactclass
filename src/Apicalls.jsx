@@ -2,6 +2,18 @@ import  axios from "axios";
 import { config } from "./Services";
 var {baseurl} = config
 
+export var user = async () =>{
+  try{
+    var response = await axios.get("https://jsonplaceholder.typicode.com/users");
+    return response.data;
+
+  }
+  catch(error){
+    return {error:true, message:error.response.data.message}
+
+  }
+}
+
 export var signin = async (username, password) => {
   try {
     
